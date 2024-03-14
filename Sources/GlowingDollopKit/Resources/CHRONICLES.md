@@ -22,16 +22,9 @@
 ## Thu 14
 
 
-1. 4:02 PM Create /Sources/GlowingDollop/Sources/ folder.
-1. 4:02 PM Create /Sources/GlowingDollop/Resources/ folder.
-1. 4:04 PM Create /Sources/GlowingDollopKit/Sources/ folder.
-1. 4:04 PM Create /Sources/GlowingDollopKit/Resources/ folder.
-1. 4:05 PM Create /Sources/GlowingDollop/Resources/CHRONICLES.md file.
-1. 4:21 PM Create /Tests/ folder.
-1. 4:21 PM Create /Tests/GlowingDollop/ folder.
-1. 4:22 PM Create /Tests/GlowingDollopKit/ folder.
-1. 4:29 PM Create /Tests/GlowingDollopKitUI/ folder.
-1. 4:30 PM Create /Tests/GlowingDollopUI/ folder.
-1. 4:31 PM Create /Tests/GlowingDollopUI/GlowingDollopUITests.swift file.
-1. 5:16 PM Create /Tests/GlowingDollop/GlowingDollopTests.swift file.
-1. 6:56 PM Create /Sources/GlowingDollopKit/Sources/ViewKit.swift file.
+1. 4:04 PM Create /Sources/ folder.
+1. 4:04 PM Create /Resources/ folder.
+1. 4:21 PM Create ../../../Tests/ folder.
+1. 4:22 PM Create ../../..//Tests/GlowingDollopKitTests/ folder.
+1. 4:29 PM Create ../../..//Tests/GlowingDollopKitUItests/ folder.
+1. 6:56 PM Create /Sources/ViewKit.swift file.

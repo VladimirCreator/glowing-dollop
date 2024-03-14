@@ -5,7 +5,7 @@ let package: Package = .init(
 	name: "glowing-dollop",
 	//defaultLocalization,: "en",
 	platforms: [
-		.iOS(.v16), .macOS(v13)
+		.iOS(.v16), .macOS(.v13)
 	],
 	products: [
 		.library(

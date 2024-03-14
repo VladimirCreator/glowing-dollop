@@ -1,5 +1,7 @@
 # glowing-dollop
-
+[![CI: GlowingDollop](https://github.com/VladimirCreator/glowing-dollop/actions/workflows/ci-glowing-dollop.yaml/badge.svg)](https://github.com/VladimirCreator/glowing-dollop/actions/workflows/ci-glowing-dollop.yaml)
+[![CI: GlowingDollopKit](https://github.com/VladimirCreator/glowing-dollop/actions/workflows/ci-glowing-dollop-kit.yaml/badge.svg)](https://github.com/VladimirCreator/glowing-dollop/actions/workflows/ci-glowing-dollop-kit.yaml)
+[![Tuist badge](https://img.shields.io/badge/Powered%20by-Tuist-blue)](https://tuist.io)
 
 ## Table of Contents
 

@@ -1,0 +1,25 @@
+name: 'CI: GlowingDollopKit'
+
+on:
+  pull_request:
+    branches:
+      - master
+    paths:
+      - 'Sources/GlowingDollopKit/**.swift' # I’d like to prepend a leading slash but it’ll prevent running a workflow.
+      - 'Sources/GlowingDollopKit/Resources/**'
+      - 'Package.swift'
+  push:
+    branches:
+      - master
+    paths:
+      - 'Sources/GlowingDollopKit/**.swift' # I’d like to prepend a leading slash but it’ll prevent running a workflow.
+      - 'Sources/GlowingDollopKit/Resources/**'
+      - 'Package.swift'
+
+jobs:
+  swift-test:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: swift test
+    name: swift test

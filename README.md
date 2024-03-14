@@ -18,4 +18,5 @@
 ## Acknowledgments
 
 
+1. I write releases’ descriptions as [the following repository](https://github.com/denoland/saaskit/tree/v0.7.0) does.
 1. [Configuration Settings File (xcconfig) format](https://help.apple.com/xcode/#/dev745c5c974)

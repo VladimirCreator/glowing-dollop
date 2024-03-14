@@ -2,7 +2,7 @@ import ProjectDescription
 
 let project: Project = .init(
 	name: "Glowing Dollop",
-	options: .init(xcodeProjectName: "glowing-dollop"),
+	options: .options (xcodeProjectName: "glowing-dollop"),
 	packages: [
 		.package(path: ".")
 	],
@@ -18,7 +18,7 @@ let project: Project = .init(
 			infoPlist: "Sources/GlowingDollop/Configuration/Info.plist",
 			sources: ["Sources/GlowingDollop/Sources/**"],
 			resources: ["Sources/GlowingDollop/Resources/**"],
-			dependences: [
+			dependencies: [
 				.package(product: "GlowingDollopKit")
 			],
 			settings: .settings(
@@ -37,7 +37,7 @@ let project: Project = .init(
 			productName: "Glowing Dollop Tests",
 			bundleId: "com.vladimircreator.glowing-dollop-tests",
 			sources: ["Tests/GlowingDollopTests/**"],
-			dependences: [
+			dependencies: [
 				.target(name: "GlowingDollop")
 			]
 		),
@@ -50,7 +50,7 @@ let project: Project = .init(
 			productName: "Glowing Dollop UI Tests",
 			bundleId: "com.vladimircreator.glowing-dollop-ui-tests",
 			sources: ["Tests/GlowingDollopUITests/**"],
-			dependences: [
+			dependencies: [
 				.target(name: "GlowingDollop")
 			]
 		)

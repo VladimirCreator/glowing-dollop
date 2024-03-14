@@ -22,9 +22,26 @@
 ## Thu 14
 
 
-1. 4:04 PM Create /Sources/ folder.
-1. 4:04 PM Create /Resources/ folder.
-1. 4:21 PM Create ../../../Tests/ folder.
-1. 4:22 PM Create ../../..//Tests/GlowingDollopKitTests/ folder.
-1. 4:29 PM Create ../../..//Tests/GlowingDollopKitUItests/ folder.
-1. 6:56 PM Create /Sources/ViewKit.swift file.
+1.  4:04 PM Create /Sources/ folder.
+1.  4:04 PM Create /Resources/ folder.
+1.  4:21 PM Create ../../../Tests/ folder.
+1.  4:22 PM Create ../../..//Tests/GlowingDollopKitTests/ folder.
+1.  4:29 PM Create ../../..//Tests/GlowingDollopKitUItests/ folder.
+1.  6:56 PM Create /Sources/ViewKit.swift file.
+1. 11:07 PM Create /Resources/Assets.xcassets/AccentColor.colorset/ folder.
+1. 11:09 PM Create /Resources/Assets.xcassets/AccentColor.colorset/Contents.json file.
+1. 11:10 PM Create /Resources/Assets.xcassets/Contents.json file.
+1. 11:11 PM Create /Resources/Assets.xcassets/BlackColor.colorset/Contents.json file.
+1. 11:13 PM Create /Resources/Assets.xcassets/GrayOneColor.colorset/Contents.json file.
+
+1. 11:17 PM Create Resources/GrayTwoColor.colorset/Contents.json file.
+1. 11:17 PM Create Resources/GrayThreeColor.colorset/Contents.json file.
+1. 11:17 PM Create Resources/GrayFourColor.colorset/Contents.json file.
+1. 11:17 PM Create Resources/GrayFiveColor.colorset/Contents.json file.
+1. 11:17 PM Create Resources/WhiteColor.colorset/Contents.json file.
+1. 11:17 PM Create Resources/BlueColor.colorset/Contents.json file.
+1. 11:17 PM Create Resources/DarkBlueColor.colorset/Contents.json file.
+1. 11:17 PM Create Resources/GreenColor.colorset/Contents.json file.
+1. 11:17 PM Create Resources/DarkGreenColor.colorset/Contents.json file.
+1. 11:17 PM Create Resources/RedColor.colorset/Contents.json file.
+1. 11:17 PM Create Resources/ShadowColor.colorset/Contents.json file.

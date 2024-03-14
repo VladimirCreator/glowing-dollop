@@ -3,9 +3,6 @@ import ProjectDescription
 let project: Project = .init(
 	name: "Glowing Dollop",
 	options: .options (xcodeProjectName: "glowing-dollop"),
-	packages: [
-		.package(path: ".")
-	],
 	targets: [
 		.target(
 			name: "GlowingDollop",
@@ -19,7 +16,7 @@ let project: Project = .init(
 			sources: ["Sources/GlowingDollop/Sources/**"],
 			resources: ["Sources/GlowingDollop/Resources/**"],
 			dependencies: [
-				.package(product: "GlowingDollopKit")
+				.target(name: "GlowingDollopKit")
 			],
 			settings: .settings(
 				configurations: [
@@ -53,6 +50,18 @@ let project: Project = .init(
 			dependencies: [
 				.target(name: "GlowingDollop")
 			]
+		),
+		.target(
+			name: "GlowingDollopKit",
+			destinations: [
+				.iPhone
+			],
+			product: .staticLibrary,
+			productName: "GlowingDollopKit",
+			bundleId: "com.vladimircreator.glowing-dollop-kit",
+			sources: ["Sources/GlowingDollopKit/Sources/**"],
+			resources: ["Sources/GlowingDollopKit/Resources/**"],
+			dependencies: []
 		)
 	]
 )

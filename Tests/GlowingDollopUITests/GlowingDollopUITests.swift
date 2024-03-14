@@ -6,6 +6,6 @@ final class GlowingDollopUITests: XCTestCase {
         let instance: XCUIApplication = .init()
         instance.launch()
 
-        XCTestAssertTrue(instance.staticTexts.element.exists)
+        XCTAssertTrue(instance.staticTexts.element.exists)
     }
 }

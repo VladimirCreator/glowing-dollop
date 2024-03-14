@@ -13,7 +13,7 @@ let project: Project = .init(
 				.iPhone
 			],
 			product: .app,
-			productName: "Glowing Dollop",
+			productName: "GlowingDollop",
 			bundleId: "com.vladimircreator.glowing-dollop",
 			infoPlist: "Sources/GlowingDollop/Configuration/Info.plist",
 			sources: ["Sources/GlowingDollop/Sources/**"],
@@ -34,7 +34,7 @@ let project: Project = .init(
 				.iPhone
 			],
 			product: .unitTests,
-			productName: "Glowing Dollop Tests",
+			productName: "GlowingDollopTests",
 			bundleId: "com.vladimircreator.glowing-dollop-tests",
 			sources: ["Tests/GlowingDollopTests/**"],
 			dependencies: [
@@ -47,7 +47,7 @@ let project: Project = .init(
 				.iPhone
 			],
 			product: .uiTests,
-			productName: "Glowing Dollop UI Tests",
+			productName: "GlowingDollopUITests",
 			bundleId: "com.vladimircreator.glowing-dollop-ui-tests",
 			sources: ["Tests/GlowingDollopUITests/**"],
 			dependencies: [

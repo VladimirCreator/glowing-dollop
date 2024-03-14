@@ -1,0 +1,26 @@
+name: 'CI: GlowingDollop'
+
+on:
+  pull_request:
+    branches:
+      - master
+    paths:
+      - 'Sources/GlowingDollop/**.swift' # I’d like to prepend a leading slash but it’ll prevent running a workflow.
+      - 'Sources/GlowingDollop/Resources/**'
+      - 'Project.swift'
+  push:
+    branches:
+      - master
+    paths:
+      - 'Sources/GlowingDollop/**.swift' # I’d like to prepend a leading slash but it’ll prevent running a workflow.
+      - 'Sources/GlowingDollop/Resources/**'
+      - 'Project.swift'
+
+jobs:
+  tuist-test:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: jdx/mise-action@v2
+      - run: mise x tuist@4.3.4 -- tuist test
+    name: tuist test

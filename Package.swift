@@ -22,6 +22,9 @@ let package: Package = .init(
 			name: "GlowingDollopKit",
 			exclude: [
 				"Resources/CHRONICLES.md"
+			],
+			resources: [
+				.process("Resources")
 			]
 		),
 		.testTarget(

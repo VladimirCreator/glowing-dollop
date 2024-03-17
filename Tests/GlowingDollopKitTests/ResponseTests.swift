@@ -1,12 +1,13 @@
+import Foundation
 import XCTest
-import GlowingDollopKit
+@testable import GlowingDollopKit
 
 final class ResponseTests: XCTestCase {
 	private let response: Response = try! JSONDecoder().decode(
 		Response.self,
 		from: try! String(
 			contentsOf: Bundle.module.url(forResource: "Response", withExtension: "json")!
-		).filter{ !$0.isNewline }.data(using: .utf8)!
+		).filter { !$0.isNewline }.data(using: .utf8)!
 	)
 
 	func testDecodeShouldThrow() {
@@ -19,7 +20,7 @@ final class ResponseTests: XCTestCase {
 
 	func testDecodeShouldNotThrow() {
 		guard let url = Bundle.module.url(forResource: "Response", withExtension: "json") else { fatalError() }
-		guard let string = try? String(contentsOf: url)?.filter{ !$0.isNewline } else { fatalError() }
+		guard let string = try? String(contentsOf: url).filter({ !$0.isNewline }) else { fatalError() }
 		guard let data = string.data(using: .utf8) else { fatalError() }
 
 		XCTAssertNoThrow(

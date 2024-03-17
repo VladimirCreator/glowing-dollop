@@ -46,14 +46,25 @@
 1. 11:17 PM Create Resources/RedColor.colorset/Contents.json file.
 1. 11:17 PM Create Resources/ShadowColor.colorset/Contents.json file.
 
+## Fri 15
+
+
+1. 3:00 AM Create /Sources/TabItemLabelStyle/ folder.
+1. 3:01 AM Create /Sources/TabItemLabelStyle/TabItemLabelStyle.swift file.
+1. 4:04 AM Get rid of -r /Sources/TabItemLabelStyle/ folder.
+1. 4:09 AM Create /Sources/Modifier/Card/ folder.
+1. 4:09 AM Create /Sources/Modifier/Card/CardModifier.swift file.[^5]
+
+[^5]: Upload at 6:04 PM on Sun 17 Mar 2024.
+
 ## Sat 16
 
 
-1. 6:08 AM...6:31 AM Create /Sources/Response.swift file.[^5]
-1. 6:32 AM...6:43 AM Create ../../../Tests/GlowingDollopKitTests/ResponseTests.swift file.[^6]
+1. 6:08 AM...6:31 AM Create /Sources/Response.swift file.[^6]
+1. 6:32 AM...6:43 AM Create ../../../Tests/GlowingDollopKitTests/ResponseTests.swift file.[^7]
 
-[^5]: Upload at 2:00 AN Sun 17 Mar 2024
-[^6] Upload at 2:00 AN Sun 17 Mar 2024
+[^6]: Upload at 2:00 AN Sun 17 Mar 2024
+[^7] Upload at 2:00 AN Sun 17 Mar 2024
 
 
 

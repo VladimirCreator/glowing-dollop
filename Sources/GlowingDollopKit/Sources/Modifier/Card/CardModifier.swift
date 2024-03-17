@@ -13,17 +13,17 @@ public struct CardModifier: ViewModifier {
 			return content
 				.padding(.horizontal, 8)
 				.padding(.top, 10).padding(.bottom, 11)
-				.background(Color(uiColor: GlowingDollopKitAsset.grayOneColor.color))
+				.background(GlowingDollopKitAsset.Assets.grayOneColor.swiftUIColor)
 				.clipShape(.rect(cornerRadius: 8))
 		case .md:
 			return content
 				.padding(16)
-				.background(Color(uiColor: GlowingDollopKitAsset.grayOneColor.color))
+				.background(GlowingDollopKitAsset.Assets.grayOneColor.swiftUIColor)
 				.clipShape(.rect(cornerRadius: 8))
 		case .lg:
 			return content
 				.padding(.horizontal, 16).padding(.vertical, 24)
-				.background(Color(uiColor: GlowingDollopKitAsset.grayOneColor.color))
+				.background(GlowingDollopKitAsset.Assets.grayOneColor.swiftUIColor)
 				.clipShape(.rect(cornerRadius: 8))
 		}
 	}

@@ -17,9 +17,9 @@ on:
       - 'Package.swift'
 
 jobs:
-  swift-test:
+  xcodebuild-test:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
-      - run: swift test
-    name: swift test
+      - run: xcodebuild test -scheme glowing-dollop
+    name: xcodebuild test

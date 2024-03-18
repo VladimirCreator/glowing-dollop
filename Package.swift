@@ -16,6 +16,7 @@ let package: Package = .init(
 		)
 	],
 	dependencies: [
+		.package(url: "https://github.com/SwiftGen/SwiftGenPlugin", from: "6.6.0")
 	],
 	targets: [
 		.target(
@@ -25,6 +26,9 @@ let package: Package = .init(
 			],
 			resources: [
 				.process("Resources")
+			],
+			plugins: [
+				.plugin(name: "SwiftGenPlugin", package: "SwiftGenPlugin")
 			]
 		),
 		.testTarget(

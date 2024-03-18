@@ -15,11 +15,12 @@ on:
       - 'Sources/GlowingDollopKit/**.swift' # I’d like to prepend a leading slash but it’ll prevent running a workflow.
       - 'Sources/GlowingDollopKit/Resources/**'
       - 'Package.swift'
+  workflow_dispatch:
 
 jobs:
   xcodebuild-test:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
-      - run: xcodebuild test -scheme glowing-dollop
+      - run: xcodebuild test -scheme glowing-dollop -destination "platform=iOS Simulator,OS=16.2,name=iPhone 14"
     name: xcodebuild test

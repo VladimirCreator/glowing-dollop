@@ -14,7 +14,7 @@ public struct TwoThirdsLabelStyle: LabelStyle {
         .frame(maxWidth: 160)
         .foregroundStyle(GlowingDollopKitAsset.Assets.whiteColor.swiftUIColor)
         .background(GlowingDollopKitAsset.Assets.darkGreenColor.swiftUIColor)
-        .clipShape(.rect(cornerRadius: 8))
+        .clipShape(RoundedRectangle(cornerRadius: 8))
     }
 }
 

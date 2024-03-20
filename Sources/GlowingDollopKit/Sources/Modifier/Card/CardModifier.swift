@@ -27,7 +27,7 @@ extension View {
     public func card(_ size: CardModifier.Size = .md) -> some View {
         self.modifier(CardModifier(size: size))
             .background(GlowingDollopKitAsset.Assets.grayOneColor.swiftUIColor)
-            .clipShape(.rect(cornerRadius: 8))
+            .clipShape(RoundedRectangle(cornerRadius: 8))
     }
 }
 

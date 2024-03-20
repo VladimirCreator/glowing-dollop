@@ -5,7 +5,7 @@ public struct PillLabelStyle: LabelStyle {
         configuration.title.font(.system(size: 14, weight: .medium))
             .padding(.horizontal, 12).padding(.vertical, 8)
             .background(GlowingDollopKitAsset.Assets.grayTwoColor.swiftUIColor)
-            .clipShape(.rect(cornerRadius: 50))
+            .clipShape(RoundedRectangle(cornerRadius: 50))
     }
 }
 

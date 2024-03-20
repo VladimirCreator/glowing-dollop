@@ -13,6 +13,6 @@ public struct OTPModifier: ViewModifier {
             }
             .frame(width: 48, height: 48)
             .background(GlowingDollopKitAsset.Assets.grayTwoColor.swiftUIColor)
-            .clipShape(.rect(cornerRadius: 8))
+            .clipShape(RoundedRectangle(cornerRadius: 8))
     }
 }

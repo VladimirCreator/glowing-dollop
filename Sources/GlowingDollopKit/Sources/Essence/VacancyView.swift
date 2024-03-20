@@ -115,7 +115,7 @@ public struct VacancyView: View {
                 .font(.system(size: 16, weight: .medium))
             AsyncImage(url: .init(string: "https://raw.githubusercontent.com/apple/swift-org-website/main/assets/images/getting-started/article-thumbnail.jpg")) { image in
                 image.resizable()
-                .clipShape(.rect(cornerRadius: 8))
+                .clipShape(RoundedRectangle(cornerRadius: 8))
             } placeholder: {
                 Text("Map")
             }
@@ -123,7 +123,7 @@ public struct VacancyView: View {
         }
         .padding(.vertical, 12).padding(.horizontal, 16)
         .background(GlowingDollopKitAsset.Assets.grayOneColor.swiftUIColor)
-        .clipShape(.rect(cornerRadius: 8))
+        .clipShape(RoundedRectangle(cornerRadius: 8))
     }
 }
 

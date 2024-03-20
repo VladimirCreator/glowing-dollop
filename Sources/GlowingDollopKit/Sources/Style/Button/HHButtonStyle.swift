@@ -14,13 +14,13 @@ public struct HHButtonStyle: ButtonStyle {
             configuration.label.font(.system(size: 14))
                 .padding(.vertical, 11)
                 .background(isEnabled ? GlowingDollopKitAsset.Assets.blueColor.swiftUIColor : GlowingDollopKitAsset.Assets.darkBlueColor.swiftUIColor)
-                .clipShape(.rect(cornerRadius: 8))
+                .clipShape(RoundedRectangle(cornerRadius: 8))
         case .bold:
             configuration.label.font(.system(size: 16, weight: .semibold))
                 .padding(.top, 14).padding(.bottom, 13)
                 .frame(maxWidth: .infinity)
                 .background(isEnabled ? GlowingDollopKitAsset.Assets.blueColor.swiftUIColor : GlowingDollopKitAsset.Assets.darkBlueColor.swiftUIColor)
-                .clipShape(.rect(cornerRadius: 8))
+                .clipShape(RoundedRectangle(cornerRadius: 8))
         }
     }
 }

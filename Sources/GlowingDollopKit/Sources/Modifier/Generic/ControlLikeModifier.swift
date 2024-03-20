@@ -4,7 +4,7 @@ public struct ControlLikeModifier: ViewModifier {
     public func body(content: Content) -> some View {
         content.padding(8)
             .background(GlowingDollopKitAsset.Assets.grayTwoColor.swiftUIColor)
-            .clipShape(.rect(cornerRadius: 8))
+            .clipShape(RoundedRectangle(cornerRadius: 8))
     }
 }
 

@@ -50,7 +50,7 @@ struct StView: View {
                             Image(systemName: "envelope")
                         }
                         TextField("", text: $viewModel.mail, prompt: Text("Электронная почта или телефон"))
-                            .onChange(of: viewModel.mail) {
+                            .onChange(of: viewModel.mail) { _ in
                                 viewModel.isEntering = false
                             }
                     }

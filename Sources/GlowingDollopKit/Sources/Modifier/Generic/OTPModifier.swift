@@ -4,6 +4,10 @@ import SwiftUI
 public struct OTPModifier: ViewModifier {
     @Binding public var pin: String
 
+    public init(_ binding: Binding<String>) {
+        self.pin = binding
+    }
+
     public func body(content: Content) -> some View {
         content.keyboardType(.numberPad)
             .multilineTextAlignment(.center)

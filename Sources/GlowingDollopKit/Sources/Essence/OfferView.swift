@@ -18,7 +18,7 @@ public struct OfferView: View {
     }
 
     private var button: some View {
-        guard let text = offer.button?.text else { return AnyeView(EmptyView()) }
+        guard let text = offer.button?.text else { return AnyView(EmptyView()) }
         return AnyView(
             Button(text) {
                 // does nothing according to technical specification.

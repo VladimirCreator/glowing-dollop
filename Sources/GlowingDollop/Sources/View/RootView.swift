@@ -103,7 +103,7 @@ struct RootView: View {
             Label {
                 Text("Отклики")
             } icon: {
-                AsyncImage(url: .init(string: "e6781c0f-1838-4e7d-92eb-f71394031f59")) { image in
+                AsyncImage(url: .init(string: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/e6781c0f-1838-4e7d-92eb-f71394031f59")) { image in
                     image
                 } placeholder: {
                     Label("GlowingDollopKitAsset.Assets.envelope.", systemImage: "envelope")
@@ -115,7 +115,7 @@ struct RootView: View {
         AnyView(
             has ? AnyView(
                 MessageView()
-            ) : AnyView (root)
+            ) : AnyView(root)
         )
         .tabItem {
             Label {

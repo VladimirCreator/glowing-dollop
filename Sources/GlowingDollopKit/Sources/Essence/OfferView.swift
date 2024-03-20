@@ -2,6 +2,10 @@ import SwiftUI
 
 public struct OfferView: View {
     public let offer: Response.Offer
+
+    public init(offer: Response.Offer) {
+        self.offer = offer
+    }
     
     public var body: some View {
         VStack(alignment: .leading, spacing: 0) {

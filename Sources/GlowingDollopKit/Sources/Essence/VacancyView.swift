@@ -64,7 +64,7 @@ public struct VacancyView: View {
         }
         .font(.system(size: 14))
         .toolbar {
-            ToolbarItemGroup(placement: .topBarTrailing) {
+            ToolbarItemGroup(placement: .navigationBarTrailing) {
                 AsyncImage(url: .init(string: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/65be1e4c-7375-49dc-9779-7c5b0bea59bc")) { image in
                     image
                 } placeholder: {

@@ -26,7 +26,7 @@ public struct OfferView: View {
         .foregroundColor(GlowingDollopKitAsset.Assets.greenColor.swiftUIColor)
     }
 }
-
+/*
 struct OfferView_PreviewProvider: PreviewProvider {
     static var previews: some View {
         VStack {
@@ -43,3 +43,4 @@ struct OfferView_PreviewProvider: PreviewProvider {
         }
     }
 }
+*/

@@ -41,10 +41,11 @@ public struct VacancyPreviewView: View {
         .imageScale(.small)
     }
 }
-
+/*
 struct VacancyPreviewView_PreviewProvider: PreviewProvider {
     static var previews: some View {
         VacancyPreviewView(vacancy: deserializedResponse.vacancies.first!)
             .card()
     }
 }
+*/

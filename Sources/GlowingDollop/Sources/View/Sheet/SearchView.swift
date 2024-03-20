@@ -16,8 +16,7 @@ struct SearchView: View {
                         } placeholder: {
                             Image(systemName: "magnifyingglass")
                         }
-                        TextField("", text: .constant(""), prompt: Text("Должность, ключевые слова")
-                            .foregroundStyle(GlowingDollopKitAsset.Assets.grayFourColor.swiftUIColor))
+                        TextField("", text: .constant(""), prompt: Text("Должность, ключевые слова")).foregroundStyle(GlowingDollopKitAsset.Assets.grayFourColor.swiftUIColor)
                     }
                     .font(.system(size: 14))
                     .foregroundStyle(GlowingDollopKitAsset.Assets.grayFourColor.swiftUIColor)

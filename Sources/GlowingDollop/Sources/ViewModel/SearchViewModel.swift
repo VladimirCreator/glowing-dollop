@@ -9,10 +9,30 @@ final class SearchViewModel: ObservableObject {
     @Published
     public var response: Response = Response(
         offers: [
-            .init(id: "0", title: "Welcome", link: "undefined", button: nil)
+            Response.Offer(
+                id: "0",
+                title: "Welcome",
+                link: "undefined",
+                button: Response.Offer.Button(text: "undefined")
+            )
         ],
         vacancies: [
-            .init(id: "0", lookingNumber: nil, appliedNumber: nil, title: "Welcome", description: nil, responsibilities: "", questions: [], company: "", address: .init(town: "", street: "", house: ""), experience: .init(text: "", previewText: ""), publishedDate: "", salary: .init(full: ""), schedules: [], isFavorite: false)
+            Response.Vacancy(
+                id: "0",
+                lookingNumber: 0,
+                appliedNumber: 0,
+                title: "Welcome",
+                description: "",
+                responsibilities: "",
+                questions: [],
+                company: "",
+                address: Response.Vacancy.Address(town: "", street: "", house: ""),
+                experience: Response.Vacancy.Experience(text: "", previewText: ""),
+                publishedDate: "",
+                salary: Response.Vacancy.Salary(full: "", short: ""),
+                schedules: [],
+                isFavorite: false
+            )
         ]
     ) 
     public var favoritedVacancies: [Response.Vacancy] {

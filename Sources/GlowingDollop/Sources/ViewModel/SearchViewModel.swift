@@ -1,7 +1,10 @@
 import SwiftUI
+#if canImport(GlowingDollopKit)
+import GlowingDollopKit
+#endif
 
 final class SearchViewModel: ObservableObject {
-    private let responseService: () -> Response
+    private let responseService: () async -> Response
 
     @Published
     public var response: Response = Response(
@@ -16,8 +19,8 @@ final class SearchViewModel: ObservableObject {
         return response.vacancies.filter { $0.isFavorite }
     }
 
-    public init(_ service: @escaping () -> Response) {
+    public init(_ service: @escaping () async -> Response) async {
         self.responseService = service
-        response = responseService()
+        response = await responseService()
     }
 }

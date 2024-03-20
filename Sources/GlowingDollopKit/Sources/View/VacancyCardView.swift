@@ -3,7 +3,7 @@ import SwiftUI
 public struct VacancyCardView: View {
     @Binding public var vacancy: Response.Vacancy
 
-    public init(_ binding: Binding<Response.Vacancy>) {
+    public init(vacancy binding: Binding<Response.Vacancy>) {
         self._vacancy = binding
     }
 

@@ -3,6 +3,10 @@ import SwiftUI
 public struct VacancyView: View {
     @Binding public var vacancy: Response.Vacancy
 
+    public init(vacancy: Binding<Response.Vacancy>) {
+        self._vacancy = vacancy
+    }
+
     private var schedules: String {
         get {
             guard let firstWord = vacancy.schedules.first else { return "Contact @VladimirCreator." }

@@ -19,8 +19,10 @@ final class SearchViewModel: ObservableObject {
         return response.vacancies.filter { $0.isFavorite }
     }
 
-    public init(_ service: @escaping () async -> Response) async {
+    public init(_ service: @escaping () async -> Response) {
         self.responseService = service
-        response = await responseService()
+        Task {
+            response = await responseService()
+        }
     }
 }

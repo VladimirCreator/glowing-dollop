@@ -4,7 +4,7 @@ import SwiftUI
 public struct OTPModifier: ViewModifier {
     @Binding public var pin: String
 
-    public init(_ binding: Binding<String>) {
+    public init(pin binding: Binding<String>) {
         self._pin = binding
     }
 

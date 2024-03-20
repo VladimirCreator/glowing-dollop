@@ -31,7 +31,7 @@ public struct Response: Codable {
         }
         public struct Experience: Codable {
             public var text, previewText: String
-            public init(text: String, previewText: Text) {
+            public init(text: String, previewText: String) {
                 self.text = text; self.previewText = previewText
             }
         }
@@ -65,7 +65,7 @@ public struct Response: Codable {
             self.title = title
             self.description = description
             self.responsibilities = responsibilities
-            self.questions = questions: [String]
+            self.questions = questions
             self.company = company
             self.address = address
             self.experience = experience

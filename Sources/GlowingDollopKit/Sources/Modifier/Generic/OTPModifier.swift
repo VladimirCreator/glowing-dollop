@@ -5,7 +5,7 @@ public struct OTPModifier: ViewModifier {
     @Binding public var pin: String
 
     public init(_ binding: Binding<String>) {
-        self.pin = binding
+        self._pin = binding
     }
 
     public func body(content: Content) -> some View {

@@ -12,13 +12,15 @@ public struct CardModifier: ViewModifier {
     public func body(content: Content) -> some View {
         switch size {
         case .sm:
-            return content
+            return AnyView(
+                content
                 .padding(.leading, 8).padding(.trailing, 12)
                 .padding(.top, 10).padding(.bottom, 11)
+            )
         case .md:
-            return content.padding(16)
+            return AnyView(content.padding(16))
         case .lg:
-            return content.padding(.horizontal, 16).padding(.vertical, 24)
+            return AnyView(content.padding(.horizontal, 16).padding(.vertical, 24))
         }
     }
 }

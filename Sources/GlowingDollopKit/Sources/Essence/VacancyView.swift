@@ -97,8 +97,8 @@ public struct VacancyView: View {
         .padding(.bottom, 13)
     }
     private var description: some View {
-        guard let description = vacancy.description else { return EmptyView() }
-        return Text(description)
+        guard let description = vacancy.description else { return AnyView(EmptyView()) }
+        return AnyView(Text(description))
     }
     private var responsobilities: some View {
         VStack(alignment: .leading, spacing: 8) {

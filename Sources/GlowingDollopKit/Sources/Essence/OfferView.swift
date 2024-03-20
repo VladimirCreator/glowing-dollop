@@ -18,12 +18,14 @@ public struct OfferView: View {
     }
 
     private var button: some View {
-        guard let text = offer.button?.text else { return EmptyView() }
-        return Button(text) {
-            // does nothing according to technical specification.
-        }
-        .font(.system(size: 14))
-        .foregroundColor(GlowingDollopKitAsset.Assets.greenColor.swiftUIColor)
+        guard let text = offer.button?.text else { return AnyeView(EmptyView()) }
+        return AnyView(
+            Button(text) {
+                // does nothing according to technical specification.
+            }
+            .font(.system(size: 14))
+            .foregroundColor(GlowingDollopKitAsset.Assets.greenColor.swiftUIColor)
+        )
     }
 }
 /*
